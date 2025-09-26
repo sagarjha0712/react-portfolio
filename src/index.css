@@ -37,3 +37,17 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===== MEDIA QUERIES FOR RESPONSIVENESS ===== */
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce the outer padding on small screens */
+    }
+
+    .container {
+        padding: 20px; /* Reduce the padding inside the main card */
+        margin-top: 70px; /* Adjust margin-top for the smaller navbar */
+    }
+}

@@ -69,3 +69,19 @@
     transform: translateY(-3px); /* Lifts the button slightly */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 }
+
+/* ===== HEADER RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .resume-header h1 {
+        font-size: 2rem;
+    }
+
+    .resume-header .subtitle {
+        font-size: 1rem;
+    }
+}
