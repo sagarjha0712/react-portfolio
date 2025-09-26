@@ -29,7 +29,7 @@ function Header() {
   }, []); // The empty array ensures this effect runs only once
 
   return (
-    <header className="resume-header">
+    <header className="resume-header" id="home">
         {/* We will add the image and icons back later */}
         <img src={profilePhoto} alt="Profile" className="profile-picture" />
         <h1>SAGAR JHA</h1>
