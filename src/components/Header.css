@@ -1,13 +1,14 @@
 /* ===== HEADER STYLES ===== */
 /* These styles only apply to the Header component */
 
+/* in src/components/Header.css */
 .resume-header {
     text-align: center;
-    border-bottom: 2px solid #3e4451;
-    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    padding: 20px 0; /* Let's adjust padding slightly for better spacing */
     margin-bottom: 30px;
-    position: relative; /* Add this */
-    z-index: 1;  
+    margin-top: 100px; /* <-- ADD THIS LINE */
 }
 
 .resume-header h1 {

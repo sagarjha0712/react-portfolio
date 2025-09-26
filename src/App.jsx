@@ -5,26 +5,43 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import FadeInSection from './components/FadeInSection';
 import Navbar from './components/Navbar';
+import useMousePosition from './hooks/useMousePosition'; // Import the hook
+import Section from './components/Section';
 
 function App() {
+  const { x, y } = useMousePosition();
+  const dotStyle = {
+    position: 'fixed',
+    top: y,
+    left: x,
+    // ... more styles for the dot in the CSS file
+  };
+
   return (
     <>
       <Navbar />
-      <div className="container">
-        <Header />
+      <div className="cursor-glow" style={{ top: y, left: x }} />
+      <Section id="home">
+      <Header />
+      </Section>
 
-        <FadeInSection>
+      <FadeInSection>
+        <Section id="education">
           <Education />
-        </FadeInSection>
+        </Section>
+      </FadeInSection>
 
-        <FadeInSection>
+      <FadeInSection>
+        <Section id="skills">
           <Skills />
-        </FadeInSection>
-        
-        <FadeInSection>
+        </Section>
+      </FadeInSection>
+      
+      <FadeInSection>
+        <Section id="projects">
           <Projects />
-        </FadeInSection>
-      </div>
+        </Section>
+      </FadeInSection>
     </>
   );
 }

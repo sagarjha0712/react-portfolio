@@ -1,82 +1,62 @@
-/* ===== PROJECTS STYLES ===== */
-#projects h2 {
-    font-size: 1.4rem;
-    color: #e5c07b;
-    border-bottom: 2px solid #e5c07b;
-    padding-bottom: 5px;
-    margin-bottom: 25px;
+/* In src/components/Projects.css */
+.project-card {
+  background-color: transparent; /* Make it blend with the page */
+  border: 1px solid #1e2d47; /* Subtle border */
+  border-radius: 8px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  overflow: hidden; /* Important! */
 }
 
-.project-card {
-    background-color: #2c313a;
-    border-radius: 8px;
-    display: flex; /* This will put the image and info side-by-side */
-    flex-direction: column; /* Default for mobile */
-    margin-bottom: 30px;
-    overflow: hidden; /* Important for the border-radius on the image */
-    border: 1px solid #3e4451;
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #56d1d9; /* Glow effect on hover */
 }
 
 .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover; /* This will crop the image nicely */
-    object-position: top; /* Show the top of the screenshot */
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  opacity: 1;
 }
 
 .project-info {
-    padding: 20px;
+  padding: 25px;
 }
 
 .project-info h3 {
-    margin-top: 0;
-    color: #61afef;
+  color: #ccd6f6;
+  margin-top: 0;
+  font-size: 1.5rem;
 }
 
 .project-tech {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px; /* Space between tags */
-    margin: 15px 0;
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin: 15px 0;
 }
 
 .project-tech span {
-    background-color: #3e4451;
-    color: #98c379; /* Green text */
-    padding: 4px 10px;
-    border-radius: 15px; /* Pill shape */
-    font-size: 0.8rem;
-}
-
-.project-links {
-    margin-top: 20px;
+  background-color: rgba(86, 209, 217, 0.1); /* Transparent cyan */
+  color: #56d1d9; /* Bright cyan text */
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .project-links a {
-    color: #abb2bf;
-    text-decoration: none;
-    border: 1px solid #61afef;
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin-right: 10px;
-    transition: background-color 0.3s, color 0.3s;
+  color: #ccd6f6;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 20px;
+  transition: color 0.3s ease;
 }
 
 .project-links a:hover {
-    background-color: #61afef;
-    color: #21252b; /* Dark text on hover */
-}
-
-/* Media Query for larger screens (desktop view) */
-@media (min-width: 768px) {
-    .project-card {
-        flex-direction: row; /* Side-by-side on desktop */
-    }
-    .project-image {
-        width: 40%; /* Image takes up 40% of the card width */
-        height: auto;
-    }
-    .project-info {
-        width: 60%;
-    }
+  color: #56d1d9;
 }

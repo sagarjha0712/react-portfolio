@@ -1,0 +1,5 @@
+.section-container {
+    max-width: 900px;
+    margin: 0 auto; /* This centers the content */
+    padding: 60px 20px; /* Vertical and horizontal padding */
+}

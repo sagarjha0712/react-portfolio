@@ -23,7 +23,7 @@ const projectData = [
 function Projects() {
   // Replace the existing return statement with this one
 return (
-    <section id="projects">
+    <section>
         <h2>PROJECTS</h2>
         <div className="projects-container">
             {projectData.map((project) => (

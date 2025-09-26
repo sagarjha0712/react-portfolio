@@ -1,14 +1,17 @@
 /* ===== NAVBAR STYLES ===== */
 .navbar {
-    position: fixed; /* This is the magic that makes it stick */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #21252b; /* Same as the container background */
+    /* New "glassy" background */
+    background-color: rgba(10, 25, 47, 0.85); 
+    backdrop-filter: blur(10px); /* This creates the blur effect */
     padding: 1rem 0;
     text-align: center;
-    z-index: 100; /* Ensures it stays on top of other content */
-    border-bottom: 1px solid #3e4451;
+    z-index: 100;
+    transition: top 0.3s ease-in-out; /* For a future hide/show effect */
+    /* We are removing the harsh border-bottom */
 }
 
 .navbar a {
