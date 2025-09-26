@@ -14,7 +14,6 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    padding-top: 60px; 
 }
 
 .container {
@@ -24,6 +23,7 @@ body {
     padding: 40px;
     border-radius: 8px;
     border: 1px solid #3e4451;
+    margin-top: 80px;
 }
 
 /* ===== GLOBAL ANIMATION STYLES ===== */

@@ -1,29 +1,31 @@
 import React from 'react';
-import FadeInSection from './components/FadeInSection';
-import Header from './components/Header'; // We are importing our Header component
+import Header from './components/Header';
 import Education from './components/Education';
-import Skills from './components/Skills';       // <-- 1. Import Skills
-import Projects from './components/Projects';   // 
-import Navbar from './components/Navbar'; // <-- 1. Import it<-- 2. Import Projects
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import FadeInSection from './components/FadeInSection';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-     <div className="container">
-      <Header />
+    <>
+      <Navbar />
+      <div className="container">
+        <Header />
 
-      <FadeInSection>
-        <Education />
-      </FadeInSection>
+        <FadeInSection>
+          <Education />
+        </FadeInSection>
 
-      <FadeInSection>
-        <Skills />
-      </FadeInSection>
-      
-      <FadeInSection>
-        <Projects />
-      </FadeInSection>
-
-    </div>
+        <FadeInSection>
+          <Skills />
+        </FadeInSection>
+        
+        <FadeInSection>
+          <Projects />
+        </FadeInSection>
+      </div>
+    </>
   );
 }
 

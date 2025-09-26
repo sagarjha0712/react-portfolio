@@ -42,6 +42,10 @@ function Header() {
                 <i className="fab fa-linkedin"></i> LinkedIn
             </a>
         </div>
+
+        <div className="cta-buttons">
+          <a href="/sagar-jha-resume.pdf" download className="cv-button">Download CV</a>
+      </div>
     </header>
   );
 }

@@ -6,6 +6,8 @@
     border-bottom: 2px solid #3e4451;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    position: relative; /* Add this */
+    z-index: 1;  
 }
 
 .resume-header h1 {
@@ -44,4 +46,26 @@
     object-fit: cover;
     border: 3px solid #61afef; /* Blue border */
     margin-bottom: 15px;
+}
+
+/* ===== Call to Action Button Styles ===== */
+.cta-buttons {
+    margin-top: 25px;
+}
+
+.cv-button {
+    background-color: #61afef; /* The nice blue */
+    color: #21252b; /* Dark text */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block; /* Allows for margin and padding */
+}
+
+.cv-button:hover {
+    transform: translateY(-3px); /* Lifts the button slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
 }
