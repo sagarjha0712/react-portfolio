@@ -1,0 +1,16 @@
+/* ===== SKILLS STYLES ===== */
+#skills h2 {
+    font-size: 1.4rem;
+    color: #e5c07b; /* Warm gold/yellow */
+    border-bottom: 2px solid #e5c07b;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.skills-list p {
+    margin: 5px 0;
+}
+
+.skills-list strong {
+    color: #c678dd; /* A nice purple for keywords */
+}

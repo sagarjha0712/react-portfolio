@@ -1,0 +1,21 @@
+/* ===== GLOBAL STYLES ===== */
+/* Applied to the entire application */
+
+body {
+    /* If you haven't added the font yet, we'll do that in the next step */
+    font-family: 'Roboto Mono', monospace; 
+    background-color: #282c34; /* Dark editor background */
+    color: #abb2bf; /* Soft light grey for text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #21252b; /* Slightly lighter dark for the 'paper' */
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #3e4451;
+}
